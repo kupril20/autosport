@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="./css/sport.css">	
+</head>
+<body>
+	<header>
+		<table class="header">
+		<tr>
+			<td><h1>Auto Sport Car</h1></td>
+			<td><ul>
+					<li><a href="index.html">Home</a></li>
+        <li><a href="menu2.html">Sportcar</a></li>
+        <li><a href="menu3.html">Supercar</a></li>
+        <li><a href="menu4.html">Hypercar</a></li>
+        <li><a href="menu5.html">About me</a></li>
+				</ul>
+			</td>
+		</tr>	
+		</table>
+	</header>
+	<hr size="10px" color="red">
+<div class="mySlides fade">
+  <img src=".\image\1.jpg" style="width:100%" height="550px">
+</div>
+<div class="mySlides fade">
+    <img src=".\image\dua.jpg" style="width:100%" height="550px">
+</div>
+<div class="mySlides fade">
+   <img src=".\image\tiga.jpg" style="width:100%" height="550px">
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); 
+}
+</script>
+<div class="bagian2">
+<div class="post1" ><p class="post"><a href="#">Lamborghini</a></p><p class="postbawah">Supercar</p><img src="./image/2.jpg" width="670px" height="400px"></div>
+<div class="post2" ><p class="post"><a href="#">Mitsubishi lancer</a></p><p class="postbawah">Sportcar</p><img src="./image/3.jpg"width="660px" height="400px"></div>
+<div class="bawah"><p class="postlagi"><a href="#">Lycan</a></p><p class="postbawahlagi">hypercar</p><img src="./image/lycan.jpg"width="100%" height="710px"></div>
+</div>
+
+<div id="footer">
+<table class="tb6">
+	<tr>
+	<td class="khusus1">SUBSCRIBE TO <br>NEW SELLER</td>
+	<td class="khusus">Don't miss the latest product information, 
+exclusive offers and exciting activities of 
+Auto Motor Sport Car directly in your email.
+	</td>
+<td >
+<div class="container">
+  <form action="action_page.php">
+      <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</td>
+</tr>
+</table>
+        <div class="bawah">Copyright &copy; 2018
+        Designed by <a href="#">Aprilyani Sanjaya</a><br>
+    </div>	
+</body>
+</html>
